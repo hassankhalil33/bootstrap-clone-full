@@ -1,0 +1,449 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styling */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+.nav-bar {
+    height: 13vh;
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    align-items: center;
+    padding: 0 12vw;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.links > li {
+    margin-right: 2vw;
+}
+
+.hero {
+    background-color: #1ABC9C;
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero > div > img:first-child {
+    width: 30%;
+}
+
+.hero > div > img:last-of-type {
+    width: 4%;
+}
+
+.hero > div > h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero > div > h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero > div {
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+}
+
+.portfolio {
+    background-color: white;
+    color: #2C3E50;
+    margin: 5vh 5vw;
+    text-align: center;
+}
+
+.portfolio > h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.portfolio > img {
+    width: 2%;
+    margin: 2% auto;
+}
+
+.portfolio > div {
+    padding: 0 7vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio > div > img {
+    width: 31%;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
+
+.about {
+    background-color: #1ABC9C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10vh 20vw;
+}
+
+.about > h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.about > img {
+    width: 4%;
+    margin: 2% auto;
+}
+
+.about > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 0;
+    font-size: 1rem;
+}
+
+.about > div > p {
+    margin: 0 5%;
+    font-size: 1.5rem;
+}
+
+.about > button {
+    background: #1ABC9C;
+    text-align: center;
+    height: 8vh;
+    width: 16vw;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+.contact-me {
+    background-color: white;
+    color: #2C3E50;
+    margin: 10vh 10vw;
+    text-align: center;
+}
+
+.contact-me > h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.contact-me > img {
+    width: 2%;
+    margin: 2% auto;
+}
+
+.contact-me > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+}
+
+.contact-me > div > input {
+    border: 1px gray;
+    border-style: none none solid none;
+    width: 45vw;
+    height: 5vh;
+    font-size: 1.5rem;
+}
+
+.contact-me > div > textarea {
+    border: 1px gray;
+    border-style: none none solid none;
+    width: 45vw;
+    height: 15vh;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-me > div > div {
+    color: rgb(249, 41, 41);
+}
+
+.contact-me > button {
+    margin-top: 5vh;
+    background: #6BD4BF;
+    text-align: center;
+    height: 5vh;
+    width: 10vw;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.footer {
+    background-color: #2C3E50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30vh;
+    color: white;
+    padding: 5vh 17vw;
+}
+
+.footer > div > h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.footer > div > h4 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.copyright {
+    background-color: #1A252F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+}
+
+.copyright > h5 {
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+}
+
+/* Media Queries */
+
+/* Tablet Support */
+@media only screen and (max-width: 1023px) {
+
+    .nav-bar {
+        padding: 0 5vw;
+    }
+
+    .hero > div {
+        width: 80vw;
+    }
+
+    .hero > div > h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero > div > h4 {
+        font-size: 1.1rem;
+    }
+
+    .portfolio > h3 {
+        font-size: 2rem;
+    }
+    
+    .portfolio > img {
+        width: 4%;
+        margin-bottom: 10%;
+    }
+
+    .portfolio > div > img {
+        width: 47%;
+    }
+
+    .about {
+        padding: 10vh 10vw;
+    }
+    
+    .about > h3 {
+        font-size: 2rem;
+    }
+    
+    .about > img {
+        width: 6%;
+        margin: 2% auto;
+    }
+    
+    .about > div {
+        flex-direction: column;
+    }
+    
+    .about > div > p {
+        margin: 5% 5%;
+        font-size: 1.2rem;
+    }
+    
+    .about > button {
+        font-size: 0.8rem;
+    }
+    
+    .contact-me > h3 {
+        font-size: 2rem;
+    }
+    
+    .contact-me > img {
+        width: 6%;
+        margin-bottom: 5vh;
+    }
+    
+    .contact-me > div > input {
+        width: 80vw;
+        font-size: 1.2rem;
+    }
+
+    .contact-me > div > textarea {
+        width: 80vw;
+        font-size: 1.2rem;
+    }
+    
+    .contact-me > button {
+        font-size: 1.1rem;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        height: 70vh;
+    }
+
+    .footer > div {
+        width: 80vw;
+    }
+
+    .footer > div > h3 {
+        margin-top: 5vh;
+    }
+}
+
+/* Mobile Support */
+@media only screen and (max-width: 767px) {
+
+    .nav-bar {
+        padding: 0 2vw;
+    }
+
+    .nav-bar > div > h3 {
+        font-size: 20px;
+    }
+
+    .hero > div {
+        width: 90vw;
+    }
+
+    .hero > div > h1 {
+        font-size: 2rem;
+    }
+
+    .hero > div > h4 {
+        font-size: 1rem;
+    }
+
+    .portfolio > h3 {
+        font-size: 1.7rem;
+    }
+    
+    .portfolio > img {
+        width: 4%;
+        margin-bottom: 10%;
+    }
+
+    .portfolio > div {
+        justify-content: center;
+    }
+
+    .portfolio > div > img {
+        width: 90%;
+    }
+
+    .about {
+        padding: 5vh 5vw;
+    }
+    
+    .about > h3 {
+        font-size: 1.5rem;
+    }
+    
+    .about > img {
+        width: 6%;
+        margin: 2% auto;
+    }
+    
+    .about > div {
+        flex-direction: column;
+    }
+    
+    .about > div > p {
+        margin: 5% 5%;
+        font-size: 1rem;
+    }
+    
+    .about > button {
+        font-size: 0.6rem;
+    }
+    
+    .contact-me > h3 {
+        font-size: 1.5rem;
+    }
+    
+    .contact-me > img {
+        width: 6%;
+        margin-bottom: 5vh;
+    }
+    
+    .contact-me > div > input {
+        width: 80vw;
+        font-size: 1rem;
+    }
+
+    .contact-me > div > textarea {
+        width: 80vw;
+        font-size: 1rem;
+    }
+    
+    .contact-me > button {
+        font-size: 1rem;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        height: 70vh;
+    }
+
+    .footer > div {
+        width: 90vw;
+    }
+
+    .footer > div > h3 {
+        margin-top: 5vh;
+    }
+}
