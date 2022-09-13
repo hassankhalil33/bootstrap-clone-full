@@ -2,8 +2,8 @@
 
 $host = "localhost";
 $db_user = "root";
-$db_pass = "toor";
-$db_name = "bootstrap-clone";
+$db_pass = null;
+$db_name = "bootstrapclone";
 
 $mysql = new mysqli($host, $db_user, $db_pass, $db_name);
 
