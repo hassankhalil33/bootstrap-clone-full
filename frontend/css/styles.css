@@ -37,10 +37,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1ABC9C;
+    height: 87vh;
 }
 
 .messages > div {
-    margin-top: 10vh;
     padding: 10vh 0;
     width: 70vw;
     display: flex;
@@ -52,6 +53,7 @@ body {
     width: 80%;
     border: 1px solid;
     border-collapse: collapse;
+    color: white;
 }
 
 .messages > div > table > thead > th {
