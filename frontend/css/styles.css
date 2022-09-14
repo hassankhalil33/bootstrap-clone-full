@@ -34,6 +34,28 @@ body {
 
 .messages {
     padding-top: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messages > div {
+    margin-top: 10vh;
+    padding: 10vh 0;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.messages > div > table {
+    width: 80%;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.messages > div > table > thead > th {
+    border: 1px solid;
 }
 
 .links {
