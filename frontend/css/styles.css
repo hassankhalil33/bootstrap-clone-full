@@ -25,6 +25,11 @@ body {
     padding: 0 12vw;
 }
 
+.nav-bar > div:first-child > h3 > a {
+    color: white;
+    text-decoration: none;
+}
+
 .links {
     list-style: none;
     display: flex;
@@ -36,6 +41,10 @@ body {
 
 .links > li {
     margin-right: 2vw;
+}
+
+.links > li > a {
+    color: white;
 }
 
 .hero {
