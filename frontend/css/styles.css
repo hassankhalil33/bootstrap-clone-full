@@ -54,11 +54,13 @@ body {
     border: 1px solid;
     border-collapse: collapse;
     color: white;
+    border-spacing: 10px;
 }
 
 .add-border {
     border: 1px solid;
     color: white;
+    padding: 5px;
 }
 
 .table-wrap {
