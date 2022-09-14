@@ -9,13 +9,15 @@ const feedbackName = document.querySelector(".feedback-name");
 const feedbackEmail = document.querySelector(".feedback-email");
 const feedbackPhone = document.querySelector(".feedback-phone");
 const feedbackMessage = document.querySelector(".feedback-message");
+const feedbackApi = document.querySelector(".feedback-api");
 const regEmail = /.....@.../;
 const regPhone1 = /\+9613\d{6}$/;
 const regPhone2 = /\+9617\d{7}$/;
 
 // Functions
 
-function validateInputFields () {
+//Validates the Input Fields
+function validateInputFields() {
     var checker = 4;
 
     if (inputName.value.length > 4) {
@@ -46,12 +48,38 @@ function validateInputFields () {
         feedbackMessage.textContent = "Message too short!";
     };
 
-    if (checker === 0) { //Reset fields if all success
-        inputName.value = "";
-        inputEmail.value = "";
-        inputPhone.value = "";
-        inputMessage.value = "";
+    if (checker === 0) { //Exec postData
+        postData();
     };
+};
+
+var data = {
+    "userName": inputName.value,
+    "userEmail": inputEmail.value,
+    "userPhone": inputPhone.value,
+    "userMessage": inputMessage.value
+}
+
+//Posts Data to DB
+async function postData() {
+    var data = {
+        "userName": inputName.value,
+        "userEmail": inputEmail.value,
+        "userPhone": inputPhone.value,
+        "userMessage": inputMessage.value
+    }
+
+    inputName.value = "";
+    inputEmail.value = "";
+    inputPhone.value = "";
+    inputMessage.value = "";
+
+    await fetch("http://localhost/fswo5/bootstrap-clone/post-contact.php", {
+        method: "POST",
+        body: new URLSearchParams(data)
+    })
+    .then(respone => respone.json())
+    .then(data => console.log(data));
 };
 
 // Script
