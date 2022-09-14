@@ -60,6 +60,11 @@ body {
     border: 1px solid;
 }
 
+.table-wrap {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
 .links {
     list-style: none;
     display: flex;
